@@ -1,0 +1,138 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[resetlabels,labeled]{multibib}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Reza}{Monadi}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+% \address{950 W Linden St.}{92507 Riverside}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{+1~(951)~396~6497}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{reza.monadi@email.ucr.edu}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+% \extrainfo{University of California, Riverside}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Contact}
+\cvitem{Address}{Department of Physics and Astronomy, UC Riverside, CA 92521}
+\cvitem{Email}{reza.monadi@email.ucr.edu}
+%\cvitem{Phone}{+1 (951) 396-6497}
+
+\section{Education}
+\cventry{Ph.D.}{University of California, Riverside}{California}{USA}{2017-present}{}
+% arguments 3 to 6 can be left empty
+\cventry{M.Sc.}{Shahid Beheshti University}{Tehran}{Iran}{2010-2013}{}
+\cventry{B.Sc.}{University of Guilan}{Rasht}{Iran}{2005-2009}{}
+
+
+\section{Research Experience}
+
+\cventry{PhD Project-A}{More Precise Selection of Extremely Red Quasars with Machine Learning}{}{ \newline \textbf{Advisor}: Fredrick Hamann}{ 
+    \newline {\textbf{Co-advisor}}: Simeon Bird}{}
+\cventry{PhD Project-B}{Studying C{\tiny{IV}} in SDSS with Machine Learning}{}{\newline \textbf{Advisor}: Simeon Bird}{}{}
+\cventry{M.Sc Project}{Statistical Study of Glitches in Radio Pulsars}{}{\newline {Advisor}:  S. M. S. Movahed}{}{}
+\cventry{B.Sc Project}{Designing a Solar Positiong System}{}{\newline {Advisor}:  H.R. Mashayekhi}{}{}
+
+ \section{Skills }
+ \cventry{O.S.}{Linux, Macintach, Microsoft Windows}{}{}{}{}
+ \cventry{Software}{ Libre Office, LaTex, Visual Studio, ... }{}{}{}{}
+ \cventry{Programming}{Python, Fortran, Matlab}{}{}{}{}
+ \cventry{Libraries}{ Scipy, Matplotlib, Sci-kit learn, PyClustering}{}{}{}{}
+\cventry{Astronomical Packages}{Cloudy, PSRCHIVE}{}{}{}{}
+ \cventry{Machine Learning}{Clustering, Clasification, PCA, SVM...}{}{}{}{}
+ \cventry{Statistics }{Sample comparison, Correlation, Optimization, ...}{}{}{}{}
+ 
+ \section{Publications}
+ \cvlistitem{A Gaussian Model for Anisotropic Strange Quark Stars:
+ 	H. Panahi, \textbf{R. Monadi} and I. Eghdamis, Chinese Physics Letters 33 (7), 072601, 2016,}
+ \cvlistitem{Statistical Analysis of I Stokes Parameter of Millisecond Pulsars, arXiv:1604.00372}
+ \section{Presentation}
+ \cventry{Poster}{Presice Seclection of Extremely Red Quasars}{Keck Science Meeting}{2019} {UCLA}{}{}
+ \section{Data-Science Courses}
+\cvlistitem{Statistical Astronomy, Grade: A}
+\cvlistitem{Computational Physics, Grade: 19/20}
+\cvlistitem{Physics of Complex Systems, Grade: 18/20}
+
+% \cvlistitem{Cosmology}
+% \cvlistitem{Exoplanetary Scinnce Detection Thechniques}
+% \cvlistitem{Physics of Interstellar Medium}
+% % \cvlistitem{Introduction to Machine Learning}
+% \cvlistitem{Gravitation}
+
+\section{Data-Science Workshop}
+% \cvlistitem{KAVLI summer program, Santa Cruze, Summer 2019}
+\cvlistitem{Optical Data Reduction Workshop, IPM, Tehran, Iran, 2012}
+
+\section{Outreach Activities}
+\cventry{Cosmic Thursdays}{Helping in organization}{UCR}{2019}{}{}
+\cventry{Apollo Event}{Collaboration in hands-on activities}{UCR}{2019}{}{}
+\cventry{MESA 2018}{Scientific Judge}{UCR}{2018}{High school student competitio}{}
+\cventry{Astronomy Sceince Fair}{Scientific Organizer} {Thaqib Astronomical Association}{Rasht, Iran}{2017}{}
+% \cvlistitem{Monthly public talk, Thaqib astronomical asociation, 2013 - 2017 }
+\section{Teaching Experience}
+\cventry{Lab TA}{Physics 40C}{UCR}{Fall of 2017}{}{}
+\cventry{Lab TA}{Physics 2LB}{UCR}{Winter of 2017 and 2018}{}{}{}
+\cventry{Lab TA}{Basic Circuits}{University of Guilan}{2015-2017}{}{}
+\cventry{Teacher}{Introductory Astronomy}{Mirza Kouchak  High School}{2015-2017}{}{}
+
+\section{Leadership Experiences}
+\cventry{Co-advisor}{Masters thesis in computational physics}{\newline University of Guilan}{Iran}{Rasht}{2014-2016}
+\cventry{Advisor}{Astronomical projects for high school students}{\newline Mirza Kouchak  High School}{Iran}{Rasht}{2016-2017}
+\section{Honors and Awards}
+\cvlistitem{Dean's fellow award, UCR, 2017-present}
+\cvlistitem{Top 2$\%$ in PhDD. program  applicants for physics in Iran, 2013}
+\cvlistitem{Top 1$\%$ in M.Sc. program applicants for physics in Iran, 2010}
+
+%\section{Language Skills}
+%\cvitem{English}{Fluent}
+%\cvitem{Persian}{Native speaker}
+%\cvitem{Arabic}{Basic}
+\newpage
+\section{References}
+\cvlistitem{\textbf{Frederick Hamann}: fhamann@ucr.edu}
+\cvlistitem{\textbf{Simeon Bird}: sbird@ucr.edu}
+\cvlistitem{\textbf{Seyed Mohamad Sadegh Movahed}: s.m.movahed@ipm.ir}
+
+\end{document}
+
+
