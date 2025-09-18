@@ -1,0 +1,176 @@
+\documentclass[11pt,letterpaper]{scrartcl}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}      % Palatino text/math for readability
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{parskip}       % No paragraph indents; adds vertical space
+
+% ---------- Look & feel ----------
+\definecolor{accent}{HTML}{1A4A7A} % deep blue (prints well in B/W)
+\setlist[itemize]{left=0pt..1.3em,itemsep=3pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=4pt,topsep=4pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\labelitemi}{\textbullet}
+\pagestyle{empty}
+
+\newcommand{\Name}{Reza Monadi}
+\newcommand{\Email}{rmonadi@calpoly.edu}
+\newcommand{\Phone}{805--756--0679}
+\newcommand{\Dept}{Department of Physics}
+\newcommand{\Inst}{California Polytechnic State University, San Luis Obispo }
+\newcommand{\Addr}{1 Grand Ave, San Luis Obispo, CA 93407}
+
+% Section header with rule
+\newcommand{\cvsection}[1]{%
+  \vspace{4pt}%
+  {\large\bfseries\textcolor{accent}{#1}}\par
+  \vspace{2pt}\hrule\vspace{6pt}
+}
+
+% Entry helpers
+\newcommand{\entry}[3]{% role/institution — right-aligned date
+  \noindent\textbf{#1}\quad #2 \hfill {\small #3}\par
+}
+\newcommand{\subentry}[2]{% course/title — right-aligned terms
+  \noindent #1 \hfill {\small #2}\par
+}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{minipage}[t]{0.64\textwidth}
+  {\LARGE\bfseries \Name}\par
+  \vspace{2pt}
+  \Dept, \Inst \\
+  \Addr
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.33\textwidth}\raggedleft
+  \href{mailto:\Email}{\Email}\\
+  \Phone
+\end{minipage}
+
+\vspace{6pt}\hrule\vspace{10pt}
+
+% ---------- Interests ----------
+\cvsection{Research Interests}
+\begin{itemize}
+\item{Quasar absorption lines (C~IV, Mg~II)}
+\item Intergalactic/CGM physics
+\item Machine learning and Bayesian inference
+\item Large spectroscopic surveys (SDSS/BOSS/DESI)
+\end{itemize}
+
+\cvsection{Teaching Interests}
+\begin{itemize}
+\item Introductory and upper-division courses in physics and astronomy
+\item Computational physics and scientific programming
+\item Data analysis and statistics for physicists
+\item Observational astronomy and astrophysics
+\end{itemize}
+
+% ---------- Education ----------
+\cvsection{Education}
+\entry{University of California, Riverside}{Ph.D., Physics}{Aug 2023}
+\emph{Dissertation:} Statistical Studies of Quasar Spectra \\
+\emph{Advisor:} Simeon Bird
+
+\entry{University of California, Riverside}{M.Sc., Physics}{Mar 2023}
+
+\entry{Shahid Beheshti University, Tehran, Iran}{M.Sc., Astrophysics}{2013}
+\emph{Thesis:} Statistical Studies of Glitches in Pulsars
+
+\entry{University of Guilan, Rasht, Iran}{B.Sc., Physics}{2009}
+
+% ---------- Appointments ----------
+\cvsection{Academic Appointments}
+\entry{Lecturer}{\Dept, \Inst}{Sep 2023--present}
+
+% ---------- Teaching ----------
+\cvsection{Teaching Experience }
+\textbf{Lecturer (Cal Poly)}\par
+\subentry{\textbf{PHYS 141} (General Physics I)}{Fall 2025}
+\subentry{\textbf{PHYS 122 Lab}}{Fall 2025}
+\subentry{\textbf{PHYS 143} (General Physics III)}{Fall 2023; Winter 2024; Spring 2024; Spring 2025}
+\subentry{\textbf{PHYS 142 Lab} (General Physics II Lab)}{Winter 2025}
+\subentry{\textbf{PHYS 121} (College Physics I)}{Fall 2024}
+\subentry{\textbf{ASTRO 101} (Introductory Astronomy)}{Winter 2024; Spring 2024; Summer 2024; Fall 2024; Winter 2025}
+\subentry{\textbf{ASTRO 102}}{Summer 2024}
+
+\textbf{Teaching Assistant (UC Riverside)}\par
+\subentry{PHYS 40C (Electricity \& Magnetism)}{Spring 2022; Fall 2017; Winter 2018}
+\subentry{PHYS 2LB (Physics for Life Sciences Lab)}{Fall 2021; Winter 2022}
+\subentry{PHYS 20 (Adventures in Astronomy \& Astrophysics)}{Spring 2021}
+\subentry{PHYS 7 (Space-Time, Relativity \& Cosmology)}{Winter 2021}
+
+% ---------- Advising ----------
+\cvsection{Advising \& Mentoring}
+\subentry{Research Advisor, Frost Summer Research, four undergraduates, Cal Poly}{Summer 2024 and 2025}
+\subentry{Senior Project Advisor, three undergraduates, Cal Poly}{(Winter 2025--present) }
+\subentry{REU Advisor, one undergraduate, UC Riverside }{Summer 2023 }
+\subentry{Senior Project Advisor, University of Guilan (Iran)}{Summer 2017}
+
+% ---------- Publications ----------
+\cvsection{Publications (peer-reviewed)}
+\begin{enumerate}[label=\arabic*.,leftmargin=1.6em]
+  \item \textbf{Monadi, R.}, Ho, M.-F., Cooksey, K., Bird, S. (2023).
+  Machine learning uncovers the Universe’s hidden gems: A comprehensive catalogue of C~IV absorption lines in SDSS DR12.
+  \emph{Monthly Notices of the Royal Astronomical Society}, 526(3), Dec 2023. [Lead author]
+
+  \item Bird, S., Fernandez, M., Ho, M.-F., Qezlou, M., \textbf{Monadi, R.}, Ni, Y., Chen, N., Croft, R., Di~Matteo, T. (2023).
+  PRIYA: A new suite of Lyman-\texorpdfstring{$\alpha$}{alpha} forest simulations for cosmology.
+  \emph{Journal of Cosmology and Astroparticle Physics}, Oct 2023.
+
+  \item \textbf{Monadi, R.}, Bird, S. (2022).
+  Improved selection of extremely red quasars with boxy C~IV lines in BOSS.
+  \emph{Monthly Notices of the Royal Astronomical Society}, 511(3), 3501--3513. [Lead author]
+
+  \item Panahi, H., \textbf{Monadi, R.}, Eghdami, I. (2016).
+  A Gaussian model for anisotropic strange quark stars.
+  \emph{Chinese Physics Letters}, 33(7), 072601.
+\end{enumerate}
+
+% ---------- Presentations ----------
+\cvsection{Conference Presentations \& Talks}
+\textbf{American Astronomical Society 245}, National Harbor, MD, Jan 12--16, 2025 — Undergraduate posters (advisor): \\
+\quad Detecting C~IV Absorbers Through Gaussian Processes and Bayesian Analysis (Wilson-Goodwin*, Hughes, \textbf{Monadi}) \\
+\quad Detecting Mg~II Absorbers in the Intergalactic Medium Using SDSS DR7 Quasar Catalog (Hughes*, Wilson-Goodwin, \textbf{Monadi}) \\[4pt]
+\textbf{N3AS Workshop}, UC Santa Cruz, Summer 2023 — Talk: Metal lines catalog for the intergalactic medium \\
+\textbf{AAS 242}, Albuquerque, NM, Jun 2023 — Talk: Machine learning uncovers the hidden gems of the Universe \\
+\textbf{IID 2022 Conference}, Alabama, Nov 2022 — Talk: Cataloging metal lines using machine learning \\
+\textbf{Debating the Potential of Machine Learning in Astronomical Surveys}, Institut d’Astrophysique de Paris, 2021 — Talk: Detecting C~IV absorption lines in SDSS spectra with Gaussian Processes \\
+\textbf{Statistical Challenges in Modern Astronomy VII}, Penn State, 2021 — Poster: Improved selection of extremely red quasars with boxy C~IV lines \\
+\textbf{Keck Science Meeting}, UCLA, 2019 — Talk + Poster: Precise selection of extremely red quasars
+
+% ---------- Grants ----------
+\cvsection{Grants \& Internal Funding}
+Frost Fund, \textbf{PI}, \$1{,}000 — Fall 2023. AWS computing credits for quasar absorption research (used by Jun 2024). \\
+Frost Fund, \textbf{PI}, \$2{,}800 — Winter 2024. Desktop workstation for undergraduate researchers (used by Jun 2024). \\
+Instructionally Related Activity (IRA) Fund, \textbf{PI}, \$750 — Spring 2025. Raspberry Pi and radio-telescope antenna for astronomy teaching; acquired two educational radio telescopes.
+
+% ---------- (Optional) Skills / Service ----------
+\cvsection{Service \& Outreach}
+\subentry{Astronomy Commitee Memeber}{2023--present}
+\subentry{Cal-Bridge Mentor}{Sep. 2025--present}
+
+\cvsection{Refrences}
+\subentry{\textbf{Simeon Bird}, Associate Professor, UC Riverside \\
+\textbf{Email:} sbird@ucr.edu\\
+\textbf{Phone:} 951--827--5108 \\}
+
+\subentry{\textbf{Matt Molter}, Professor, Cal Poly \\
+\textbf{Email:} mmoelter@calpoly.edu\\
+\textbf{Phone:} 805--756--2656}
+
+\subentry{\textbf{ Robert Echols}, Professor, Cal Poly \\
+\textbf{Email:} rechols@calpoly.edu\\
+\textbf{Phone:} 805--756--7649}
+
+\end{document}
